@@ -1,0 +1,14 @@
+version: "3"
+
+services: 
+  auto-checker:
+    build:
+      context: .
+      dockerfile: VKAutoChecker/Dockerfile
+    environment:
+      - TOKEN
+      - GROUPID
+      - LIKED_LAST_POSTS
+      - COUNT_LAST_POSTS
+      - COOLDOWN_LIKE
+      - COOLDOWN_CHECK
